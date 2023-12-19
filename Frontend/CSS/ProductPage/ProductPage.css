@@ -1,0 +1,438 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.expand-content-2, .expand-content-1{
+  margin: 15px 25px 40px;
+   font-weight:normal;
+   font-size:120%;
+   font-family: 'Poppins', sans-serif;
+   text-align: justify;
+}
+.expand-content-heading-2{
+  margin: 0 20%;
+   font-weight:140%
+}
+.expand-content-heading-1{
+  margin: 0 20%;
+   font-weight:140%
+}
+.product-heading {
+    margin-top: 150px;
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .line {
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    width: fit-content;
+    border-bottom-color: #00cc66;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+  }
+
+  .Product-Image{
+    height: 500px;
+    max-width: 100%;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    margin-left: 90px;
+    margin-right: 90px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+   }
+   .Product-Image-1{
+    height:100% ;
+    width: 50%;
+    position: relative;
+   }
+   .Product-Image-2{
+    height:100% ;
+    width: 50%;
+   position: relative;
+ }
+.Product-Image img{
+height: 100%;
+width: 100%;
+}
+
+.readM{
+  left: 8.5%;
+  bottom: 110px;
+}
+
+.Product-Image1-heading {
+    height: 100%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: width 0.5s  ease;
+   /* Add transition for smooth animation */
+}
+.Product-Image2-heading{
+    height: 100%;
+    width: 35%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: width 0.5s ease; 
+}
+.Product-Image2-heading h2{
+    font-size: 140%;
+    color: white;
+    margin: 0;
+    position: relative; /* Add relative positioning */
+    z-index: 1;
+}
+.Product-Image1-heading h2 {
+  font-size: 140%;
+    color: white;
+    margin: 0;
+    position: relative; /* Add relative positioning */
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.circle {
+    position: relative;
+    bottom: 100px;
+    left: 13%;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    cursor: pointer;
+    transition: left 0.5s ease; /* Add transition for smooth movement */
+}
+ .circle2{
+    position: relative;
+    bottom: 100px;
+    left: 13%;
+    display: inline-block;
+    margin-bottom: 20px; /* Adjust margin as needed */
+    cursor: pointer;
+    transition: left 0.5s ease; 
+ }
+
+.border-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px; /* Adjust the circle size as needed */
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid white; /* White border around the circle */
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.arrow {
+    position: relative;
+    z-index: 1; /* Ensure the arrow is above the circle */
+    color: white;
+    font-size: 24px;
+    transition: transform 0.5s ease, transform-origin 0.5s ease; /* Add transition for smooth rotation and transform origin */
+     /* Center the transform origin */
+}
+
+.arrow.expanded {
+    transform: rotate(180deg);
+    padding-bottom: 2px;
+}
+.arrow2 {
+    position: relative;
+    z-index: 1; /* Ensure the arrow is above the circle */
+    color: white;
+    font-size: 24px;
+    transition: transform 0.5s ease, transform-origin 0.5s ease; /* Add transition for smooth rotation and transform origin */
+     /* Center the transform origin */
+}
+
+.arrow2.expanded {
+    transform: rotate(180deg);
+    padding-bottom: 2px;
+}
+
+
+.Product-Image-1 h3 {
+    font-size: 85%;
+position: relative;
+transition: left 0.5s ease; /* Add transition for smooth movement */
+}
+
+
+.Product-Image-2 h3 {
+    font-size: 85%;
+position: relative;
+transition: left 0.5s ease; /* Add transition for smooth movement */
+}
+
+
+
+
+/* footer css */
+
+@media (max-width:1460px){
+  .box-text2 a{
+    font-size: 180%;
+  }
+  .box-text2 h3{
+    font-size: 120%;
+    }
+    .Year h1{
+      font-size: 260%;
+      }
+      .number{
+        font-size: 600%;
+      }
+      .text{
+         font-size: 250%;
+      }
+      .box-heading h1{
+         font-size: 330%;
+      }
+      .box-circle{
+        height: 7.5%;
+        width: 6%;
+      }
+      .Product-box{
+        height: 580px;
+      }
+      .expand-content-2{
+         font-size:100%
+      }
+      .expand-content-heading-2{
+         font-weight:120%
+      }
+      .expand-content-1{
+         font-size:100%
+      }
+      .expand-content-heading-1{
+         font-weight:120%
+      }
+      .line{
+        font-size: 35px;
+      
+      }
+}
+
+@media (max-width:1200px){
+  .box-text2 a{
+    font-size: 160%;
+  }
+  .box-text2 h3{
+    font-size: 100%;
+    }
+    .Year h1{
+      font-size: 240%;
+      }
+      .number{
+        font-size: 500%;
+      }
+      .text{
+         font-size: 200%;
+      }
+      .box-heading h1{
+         font-size: 310%;
+      }
+
+      .Product-box{
+        height: 500px;
+      }
+      
+      .expand-content-2{
+         font-size:80%
+      }
+      .expand-content-heading-2{
+         font-weight:100%
+      }
+      .expand-content-1{
+         font-size:80%
+      }
+      .expand-content-heading-1{
+         font-weight:100%
+      }
+      .line{
+        font-size: 30px;
+      }
+}
+@media (max-width:950px){
+  .box-text2 a{
+    font-size: 140%;
+  }
+  .box-text2 h3{
+    font-size: 80%;
+    }
+    .Year h1{
+      font-size: 220%;
+      }
+      .number{
+        font-size: 400%;
+      }
+      .text{
+         font-size: 150%;
+      }
+      .box-heading h1{
+         font-size: 290%;
+      }
+ 
+      .Product-box{
+        height: 400px;
+      }
+      .Product-Image{
+        height: 1000px;
+        flex-direction: column;
+      }
+    
+      
+      .Product-Image-1{
+        height:50% ;
+        width: 100%;
+      }
+      .Product-Image-2{
+        height:50% ;
+        width: 100%;
+      }
+      .Product-Image2-heading{
+        width: 30%;
+      }     
+      .expand-content-2{
+        font-size:100%
+     }
+     .expand-content-heading-2{
+        font-weight:120%
+     }
+     .expand-content-1{
+        font-size:100%
+     }
+     .expand-content-heading-1{
+        font-weight:120%
+     }
+}
+@media (max-width:750px){
+  .box-text2 a{
+    font-size: 120%;
+  }
+  .box-text2 h3{
+    font-size: 60%;
+    }
+    .Year h1{
+      font-size: 180%;
+      }
+      .number{
+        font-size: 300%;
+      }
+      .text{
+         font-size: 100%;
+      }
+      .box-heading h1{
+         font-size: 230%;
+      }
+ 
+      .Product-box{
+        height: 350px;
+      }
+      .expand-content-2{
+        font-size:80%
+     }
+     .expand-content-heading-2{
+        font-weight:100%
+     }
+     .expand-content-1{
+        font-size:80%
+     }
+     .expand-content-heading-1{
+        font-weight:100%
+     }
+      .expand-content-2{
+         font-size:80%
+      }
+      .expand-content-heading-2{
+         font-weight:100%
+      }
+      .Product-Image{
+        height: 900px;
+      }
+      .Product-Image-1 h3 {
+        font-size: 75%;
+      }
+      .Product-Image-2 h3 {
+        font-size: 75%;
+      }
+  
+}
+@media (max-width:650px){
+ 
+      .Product-box{
+        height: 300px;
+      }  
+      .expand-content-1{
+        font-size:50%
+     }
+     .expand-content-heading-1{
+        font-weight:80%
+     }
+      .expand-content-2{
+         font-size:50%
+      }
+      .expand-content-heading-2{
+         font-weight:80%
+      }
+      .Product-Image{
+        height: 800px;
+      }
+      .line{
+        font-size: 30px;
+      }
+      .Product-Image2-heading h2{
+        font-size: 100%;
+      }
+      .Product-Image1-heading h2{
+        font-size: 100%;
+      }
+      .Product-Image-1 h3 {
+    left: 8%;
+      }
+      .Product-Image-1 h3 {
+        font-size: 60%;
+      }
+      .Product-Image-2 h3 {
+        font-size: 60%;
+      }
+}
+.expanded {
+  width: 100%;
+  overflow: hidden;
+}
+
+.expanded .circle {
+  left: 50%;
+  overflow: hidden;
+}
+.expanded .circle2 {
+  left: 50%;
+  overflow: hidden;
+}

@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+}
+
+body {
+
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    /* Hide horizontal scrollbar */
+}
+.navbar-custom {
+    background-color: rgba(57, 57, 57, 0.4);
+    
+}
+
+#nav-bar {
+    margin: 0;
+    padding: 0.7% 1%;
+}
+
+.nav-item {
+    padding: 0 25px;
+    font-size: 1.3rem;
+
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.emlogo {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.navbar-brand h2 {
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-link h4 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding-top: 10%;
+}

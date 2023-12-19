@@ -1,0 +1,41 @@
+.navbar-custom {
+    background-color: rgba(57, 57, 57, 0.5);
+
+}
+
+.navbar-brand h2 {
+    font-size: 1.9rem;
+    font-weight: 300;
+    color: white;
+    padding-top: 4%;
+    font-family: 'Poppins';
+}
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.emlogo {
+    height: 50px;
+    width: 50px;
+    margin-right: 5px;
+}
+
+.navbar-nav li {
+    padding: 0 15px;
+    font-size: 1.4rem;
+    font-family: 'Poppins';
+    font-weight: normal;
+}
+
+.navbar-nav li a {
+    color: white;
+
+}
+
+.active {
+    color: #1ED760 !important;
+}

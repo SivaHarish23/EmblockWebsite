@@ -1,0 +1,213 @@
+body {
+    background-color: black;
+    color: white; 
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  #teamhtml{
+    margin-top: 10%;
+  }
+  
+  .Team-heading{
+    text-align: center; 
+  }
+  
+  .line {
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    width: fit-content;
+    border-bottom-color:  #00cc66;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+  }
+  
+  .main1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 400px;
+    margin: 30px;
+    margin-top: 100px;
+    overflow: hidden;
+  }
+  .Team-box {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    border-radius: 20px;
+    transition: 1s;
+    cursor: pointer;
+  }
+  .boxImage {
+    height: 100%;
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
+  }
+  .conten {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to bottom, transparent, black); /* Gradient from transparent to black */
+    color: white;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  
+  .conten h2{
+  font-size: 200%;
+  font-family: 'Poppins';
+  }
+  .conten p{
+    font-size: 100%;
+    padding: 0 5%;
+    font-family: 'Poppins';
+  }
+  
+  .Team-box.expanded .conten {
+    height: 100%;
+  }
+  .Team-box:hover {
+    width: 400px;
+    background: linear-gradient(to bottom, transparent 50%, black 50%);
+  }
+  
+  .Team-box.expanded {
+    width: 400px;
+    background: linear-gradient(to bottom, transparent 50%, black 50%);
+  }
+  .Team-box.expanded {
+    width: 400px;
+    background: linear-gradient(to bottom, transparent 50%, black 50%);
+  }
+  .Tech-heading{
+    margin-top: 100px;
+  }
+  
+  .scroll1,
+    .scroll2 {
+      margin-top: 20px;
+      height: 50%;
+      width: 100%; 
+      white-space: nowrap;
+      
+    }
+    
+    .logos-slide img,.logos-slide2 img{
+      height: 130px;
+      width: 200px;
+      margin: 0 20px;
+    }
+  
+  @media (max-width:1460px){
+  
+        .line {
+          font-size: 40px;
+        }
+        .conten h2{
+          font-size: 180%;
+          }
+          .conten p{
+          font-size: 80%;
+          }
+         
+          .logos-slide img,.logos-slide2 img{
+            height: 110px;
+            width: 180px;
+          }
+  
+  }
+  
+  @media (max-width:1200px){
+    
+        .line {
+          font-size: 35px;
+        }
+        .conten h2{
+          font-size: 160%;
+          }
+          .conten p{
+          font-size: 60%;
+          }
+        
+          .logos-slide img,.logos-slide2 img{
+            height: 80px;
+            width: 150px;
+          }
+  }
+  @media (max-width:950px){
+    
+        .line {
+          font-size: 25px;
+        }
+        .conten h2{
+          font-size: 140%;
+          }
+          .conten p{
+          font-size: 50%;
+          }
+          .logos-slide img,.logos-slide2 img{
+            height: 60px;
+            width: 130px;
+          }
+  }
+  
+  
+  .scroll {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    height: 300px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  
+  
+    .logos-slide{
+      display: inline-block;
+        animation: 10s slide infinite linear;
+    }
+    .logos-slide2{
+      display: inline-block;
+        animation: 10s slide2 infinite linear;
+    }
+  
+  
+    @keyframes slide {
+      from {
+        transform: translateX(-100%);
+      }
+  
+      to {
+        transform: translateX(0);
+      }
+    }
+  
+    @keyframes slide2 {
+      from {
+        transform: translateX(0);
+      }
+  
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  
+    .scroll1:hover .logos-slide,
+    .scroll2:hover .logos-slide2 {
+      animation-play-state: paused;
+    }
+  

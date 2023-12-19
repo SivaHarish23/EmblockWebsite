@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carouselImages {
+    background-color: black;
+    z-index: -1;
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.carouselImages img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.home-text {
+    width: 34%;
+    color: white;
+    top: 55%;
+    left: 5%;
+    position: absolute;
+    font-size: 2.8rem;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    font-size: 1.85rem;
+}
+
+.toggle-div {
+    display: none;
+}
+
+.active {
+    color: #1ED760 !important;
+}
+
+.greendecor img{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  bottom: -50%;
+  top: 110%;
+}
+
+.trapezium {
+  bottom: 0%;
+  position: absolute;
+  left: -170%;
+  width: 250%;
+  height: 80%;
+  padding-bottom: 100px;
+  background-color: rgba(255, 255, 255, 0.1);
+  clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.textTrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+}
